@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="MainActivity">
+
+    <CheckBox
+        android:id="@+id/chkPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Pizza" />
+
+    <CheckBox
+        android:id="@+id/chkCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/chkPizza"
+        android:text="Cafe" />
+
+    <CheckBox
+        android:id="@+id/chkHamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/chkCafe"
+        android:text="Hamburguesa" />
+
+    <Button
+        android:id="@+id/btnOrdenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkCafe"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@id/chkHamburguesa"
+        android:text="Ordenar"/>
+
+</RelativeLayout>
